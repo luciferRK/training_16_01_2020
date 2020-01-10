@@ -1,0 +1,81 @@
+
+.heading-initial .heading{
+    margin: auto;
+}
+#labels{
+    padding-top: 15px;
+}
+/*add full-width input fields*/ 
+      
+input[type=text], 
+input[type=password] { 
+    width: 50%; 
+    padding: 12px 20px; 
+    margin: 8px 0; 
+    display: inline-block; 
+    border: 2px solid #ccc; 
+    box-sizing: border-box; 
+} 
+/* set a style for all buttons*/ 
+  
+button { 
+    background-color: Green; 
+    color: white; 
+    padding: 15px 20px; 
+    margin: 8px 0; 
+    cursor: pointer; 
+    width: 100%; 
+} 
+/*set styles for the cancel button*/ 
+  
+.cancelbtn { 
+    padding: 15px 20px; 
+    background-color:#000; 
+} 
+/*float cancel and signup buttons and add an equal width*/ 
+      
+.cancelbtn, 
+.signupbtn { 
+    float: left; 
+    width: 40%; 
+    width:auto;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 4px;
+} 
+/*add padding to container elements*/ 
+  
+.container { 
+    padding: 16px; 
+    width: 50%;
+    border: 3px solid rgb(88, 85, 85);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: auto;
+} 
+.container #inp{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+/*clear floats*/ 
+  
+.clearfix::after { 
+    content: ""; 
+    clear: both; 
+    display: table; 
+} 
+.clearfix{
+    margin: auto;
+    padding: auto;
+}
+/*styles for cancel button and signup button  
+      on extra small screens*/ 
+      
+      @media screen and (max-width: 300px) { 
+        .cancelbtn, 
+        .signupbtn { 
+            width: 100%; 
+        } 
+    } 

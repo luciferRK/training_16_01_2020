@@ -1,0 +1,33 @@
+<div class="heading-initial">
+    <h2 class="heading">Signup Form</h2> 
+</div>
+    <!--Step 1:Adding HTML-->
+    <form action="/action_page.php"  class="form"> 
+        <div class="container"> 
+            <div id="inp">
+                <label id="labels"><b>Name</b></label> 
+                <input type="text" placeholder="Enter your name" name="name" required>
+            </div>
+            <div id="inp">
+                <label id="labels"><b>Email</b></label> 
+                <input type="text" placeholder="Enter Email" name="email" required>
+            </div>
+            <div id="inp">
+                <label id="labels"><b>Password</b></label> 
+                <input type="password" placeholder="Enter Password" name="psw" required>
+            </div>
+            <div id="inp">
+                <label id="labels"><b>Repeat Password</b></label> 
+                <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+            </div>
+            <div>
+                <input type="checkbox" checked="checked"> Remember me 
+            </div>
+            <div class="clearfix"> 
+                <button type="button" class="cancelbtn">Cancel</button> 
+                <button type="submit" class="signupbtn">Sign Up</button> 
+            </div> 
+        </div> 
+    </form> 
+
+    <router-outlet></router-outlet>
