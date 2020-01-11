@@ -151,6 +151,7 @@
     font-size: 14px;
     text-decoration: none;
     line-height: 1.5;
+    cursor:pointer;
     color: #252525;
   }
   
@@ -269,7 +270,7 @@
     width: 100%;
     height: 100%;
     box-shadow: 0px 0px 0px 0px;
-    color: rgba(87,184,70, 0.8);
+    color: rgba(43, 43, 43, 0.8);
   }
   
   .input100:focus + .focus-input100 {
@@ -3475,6 +3476,7 @@
   z-index: 3;
   box-shadow: #333333;
 }
+
 .heading_container{
   padding-top:20px;
   padding-bottom: 30px;
@@ -3538,6 +3540,7 @@
 }
 .login100-form-btn_2_0:hover {
   background: #333333;
+  box-shadow: 2px 2px 20px 5px #e2e2e2;
 }
 
 .submit-container{
@@ -3552,14 +3555,45 @@
 
 .overlay{
   position:fixed;
-  display:none; 
+  display:none;
   z-index:2;
   /* color with alpha channel */
-  background-color: rgba(0, 0, 0, 0.5); /* 0.7 = 70% opacity */
+  background-color: rgba(0,0,0, 0.5); /* 0.7 = 70% opacity */
 
   /* stretch to screen edges */
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
+}
+
+.input100_2_0 {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #666666;
+
+  display: block;
+  width: 100%;
+  background: #e6e6e6;
+  height: 50px;
+  border-radius: 25px;
+  padding: 0 30px 0 58px;
+}
+.focus-input100_2_0 {
+  display: block;
+  position: absolute;
+  border-radius: 25px;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0px 0px 0px 0px;
+  color: rgba(219, 219, 219, 0.8);
+}
+
+.input100_2_0:focus + .focus-input100_2_0 {
+  -webkit-animation: anim-shadow 0.5s ease-in-out forwards;
+  animation: anim-shadow 0.5s ease-in-out forwards;
 }
