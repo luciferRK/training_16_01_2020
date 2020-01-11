@@ -93,6 +93,7 @@
   .heading{
     font-family:'Montserrat', sans-serif;
     padding:40%;
+
   }
   ::placeholder{
     font-family:'Montserrat', sans-serif;
@@ -145,14 +146,14 @@
   /*//////////////////////////////////////////////////////////////////
   [ Utility ]*/
   .txt1 {
-    font-family: 'Poppins' sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 15px;
     line-height: 1.5;
     color: #000000;
   }
   
   .txt2 {
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:'Montserrat', sans-serif;
     font-size: 14px;
     font-weight:bold;
     text-decoration: none;
@@ -340,10 +341,11 @@
     flex-wrap: wrap;
     justify-content: center;
     padding-top: 20px;
+    font-family: 'Montserrat', sans-serif;
   }
   
   .login100-form-btn {
-    font-family: 'Ubuntu' sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 15px;
     line-height: 1.5;
     color: #fff;
@@ -3473,7 +3475,7 @@
 
 /*Our Css*/
 .alread{
-    font-family: Arial;
+    font-family: 'Montserrat', sans-serif;
     font-size: 15px;
     line-height: 1.5;
     color: #000000;
