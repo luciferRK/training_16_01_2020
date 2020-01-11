@@ -26,4 +26,8 @@ export class LogInComponent implements core.OnInit {
     elem.setAttribute("style","display:none");
   }
 
+  log(x){
+    console.log(x);
+  }
+
 }
