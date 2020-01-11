@@ -248,7 +248,7 @@
     background: #e6e6e6;
     height: 50px;
     border-radius: 25px;
-    padding: 0 30px 0 68px;
+    padding: 0 30px 0 58px;
   }
   
   
@@ -301,7 +301,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    padding-left: 35px;
+    padding-left: 25px;
     pointer-events: none;
     color: #666666;
   
@@ -312,7 +312,7 @@
   }
   
   .input100:focus + .focus-input100 + .symbol-input100 {
-    color: #57b846;
+    color: #000000;
     padding-left: 28px;
   }
   
@@ -3455,4 +3455,105 @@
 	position: absolute;
 	right: 0px;
 	bottom: 0px;
+}
+
+.fp{background-color: #333333;
+  display:none;
+  border-radius:15px;
+  padding:10px 30px;
+  position:fixed;
+  top:280px;
+  left:600px;
+  width:25%;
+  height:30%;
+  z-index: 3;
+  box-shadow: #333333;
+}
+.heading_container{
+  padding-top:20px;
+  padding-bottom: 30px;
+  width:100%;
+}
+.fp .heading{
+  font-family: 'Montserrat';
+  color:#ffffff;
+  font-weight:bold;
+  display:block;
+  width:100%; 
+  text-align:center;
+}
+.fp_submit{
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.fp_submit_2_0{
+  width: 50%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  float:right;
+  justify-content: center;
+  padding-top: 15px;
+}
+.login100-form-btn_2_0{
+  font-family: 'Montserrat' sans-serif; 
+    font-size: 12px;
+    line-height: 1.5;
+    color: #fff;
+    text-transform: uppercase;
+  
+    width: 10%;
+    height: 50px;
+    border-radius: 25px;
+    background: #57b846;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 25px;
+  
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+}
+.login100-form-btn_2_0:hover {
+  background: #333333;
+}
+
+.submit-container{
+  display:flex;
+  margin:auto;
+  padding-top:6px;
+  width:80%;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+
+
+.overlay{
+  position:fixed;
+  display:none; 
+  z-index:2;
+  /* color with alpha channel */
+  background-color: rgba(0, 0, 0, 0.5); /* 0.7 = 70% opacity */
+
+  /* stretch to screen edges */
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
 }
