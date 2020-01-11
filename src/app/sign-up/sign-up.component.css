@@ -1,3 +1,6 @@
+.main-container{
+    font-family: 'Montserrat', sans-serif;
+}
 
 .heading-initial .heading{
     margin: auto;
@@ -23,12 +26,14 @@ input[type=password] {
 /* set a style for all buttons*/ 
   
 button { 
-    background-color: Green; 
+    background-color: rgb(6, 87, 6); 
     color: white; 
     padding: 15px 20px; 
     margin: 8px 0; 
     cursor: pointer; 
     width: 100%; 
+    font-family: 'Montserrat', sans-serif;
+    
 } 
 /*set styles for the cancel button*/ 
   
@@ -36,6 +41,12 @@ button {
     padding: 15px 20px; 
     background-color:#000; 
 } 
+.cancelbtn:hover{
+    background-color: #524f52;
+}
+.signupbtn:hover{
+    background-color: rgb(4, 136, 43);
+}
 /*float cancel and signup buttons and add an equal width*/ 
       
 .cancelbtn, 
@@ -62,6 +73,9 @@ button {
     display:flex;
     flex-direction: row;
     justify-content: space-between;
+}
+::placeholder{
+    font-family: 'Montserrat', sans-serif;
 }
 /*clear floats*/ 
   
