@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, Validators, FormGroup } from '@angular/forms';
+import { FormBuilder, Validators, FormGroup, NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-sign-up',
@@ -7,7 +7,22 @@ import { FormBuilder, Validators, FormGroup } from '@angular/forms';
   styleUrls: ['./sign-up.component.css']
 })
 export class SignUpComponent implements OnInit {
-  formName: FormGroup;
+
+  title = 'FormValidation';  
+  mobNumberPattern = "^((\\+91-?)|0)?[0-9]{10}$";  
+ isValidFormSubmitted = false;  
+ user = new User();  
+   
+   
+ onFormSubmit(form: NgForm) {  
+   this.isValidFormSubmitted = false;  
+   if (form.invalid) {  
+      return;  
+   }  
+   this.isValidFormSubmitted = true;  
+   form.resetForm();  
+}  
+
 
   constructor(private fb: FormBuilder) { }
 
@@ -16,3 +31,7 @@ export class SignUpComponent implements OnInit {
   }
 
 }
+   
+export class User {  
+  mobileNumber ?: string;  
+}  
