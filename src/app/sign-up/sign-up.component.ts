@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, Validators, FormGroup, NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-sign-up',
@@ -7,9 +8,30 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SignUpComponent implements OnInit {
 
-  constructor() { }
+  title = 'FormValidation';  
+  mobNumberPattern = "^((\\+91-?)|0)?[0-9]{10}$";  
+ isValidFormSubmitted = false;  
+ user = new User();  
+   
+   
+ onFormSubmit(form: NgForm) {  
+   this.isValidFormSubmitted = false;  
+   if (form.invalid) {  
+      return;  
+   }  
+   this.isValidFormSubmitted = true;  
+   form.resetForm();  
+}  
+
+
+  constructor(private fb: FormBuilder) { }
 
   ngOnInit() {
+    
   }
 
 }
+   
+export class User {  
+  mobileNumber ?: string;  
+}  

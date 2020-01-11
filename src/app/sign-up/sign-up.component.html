@@ -2,7 +2,7 @@
     <div class="limiter">
         <div class="container-login100">
             <div class="wrap-login100">
-                <form class="login100-form validate-form">
+                <form class="login100-form validate-form" #userForm="ngForm" (ngSubmit)="onFormSubmit(userForm)">
                     <span class="login100-form-title heading">
                         Sign Up
                     </span>
@@ -14,7 +14,12 @@
                         </span>
                     </div>
                     <div class="wrap-input100 validate-input" >
-                        <input class="input100 inputs" type="text" name="phone" placeholder="Phone Number">
+                        <input class="input100 inputs" [ngModel]="user.mobileNumber" [pattern]="mobNumberPattern" #mobNumber="ngModel" type="text" name="phone" placeholder="Phone Number">
+                        <div *ngIf="mobNumber.errors && userForm.submitted && !isValidFormSubmitted" [ngClass] = "'error'">  
+                            <div *ngIf="mobNumber.errors.pattern">  
+                              Mobile number not valid.  
+                            </div>   
+                        </div>
                         <span class="focus-input100"></span>
                         <span class="symbol-input100">
                             <i class="fa fa-address-book-o" aria-hidden="true"></i>
