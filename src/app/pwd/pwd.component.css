@@ -206,18 +206,18 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 80px 130px 33px 95px;
+    padding: 60px 130px 43px 95px;
   }
   
   /*------------------------------------------------------------------
   [  ]*/
   .login100-pic {
     width: 316px;
-    padding-top: 7%;
   }
   
   .login100-pic img {
     max-width: 100%;
+    margin-top:-1%;
   }
   
   

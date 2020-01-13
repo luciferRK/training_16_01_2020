@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators, FormGroup, NgForm } from '@angular/forms';
 
@@ -8,7 +9,7 @@ import { FormBuilder, Validators, FormGroup, NgForm } from '@angular/forms';
 })
 export class SignUpComponent implements OnInit {
 
-  title = 'FormValidation';  
+  /*title = 'FormValidation';  
   mobNumberPattern = "^((\\+91-?)|0)?[0-9]{10}$";  
  isValidFormSubmitted = false;  
  user = new User();  
@@ -21,17 +22,22 @@ export class SignUpComponent implements OnInit {
    }  
    this.isValidFormSubmitted = true;  
    form.resetForm();  
-}  
+  }  */
 
 
-  constructor(private fb: FormBuilder) { }
+
+
+  constructor(private router: Router) { 
+
+  }
 
   ngOnInit() {
     
   }
 
+  changeSignup = function(){
+    this.router.navigateByUrl("signup2");
+  }
+
+
 }
-   
-export class User {  
-  mobileNumber ?: string;  
-}  
