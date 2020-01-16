@@ -7,10 +7,12 @@ import { AppComponent } from './app.component';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AdsComponent } from './ads/ads.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    AdsComponent,
   ],
   imports: [
     BrowserModule,

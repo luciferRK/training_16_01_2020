@@ -1,4 +1,4 @@
-import { Component, ViewChild } from '@angular/core';
+import { Component, ViewChild, Input } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -11,10 +11,8 @@ export class AppComponent{
 
   datevar = new Date();
   
-  vari :HTMLElement=document.getElementById("IDname");
 
   ngOnInit(){
-   this.vari.style.color = red;
   }
 
 
@@ -25,6 +23,12 @@ export class AppComponent{
     else{
       this.imgname="logo"
     }
+    
+    document.getElementById("IDname").style.color ='red'
+  }
+
+  Register(event){
+    alert(event)
   }
 
   
