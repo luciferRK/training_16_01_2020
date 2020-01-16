@@ -1,11 +1,17 @@
 
-<img [src]="'assets/image/'+imgname+'.png'"><br>
-<button (click)=changeImage()>Click me</button>
+<button (click)=changeImage()>Change Image</button><br>
+<img #IDname [src]="'assets/image/'+imgname+'.png'">
 
 <h3>{{"Hello world" | uppercase}}</h3>
 <h3>{{"Hello world" | lowercase}}</h3>
 <h3>{{"Hello world" | slice:0:3}}</h3>
 
-<h3>{{"We will go on "+date | slice:}}</h3>
+<h3>{{"We will go on "+(datevar | date:"dd/MM/yy")}}</h3>
+<h3>{{"We will go on "+(datevar | date:"dd/MMM/yy")}}</h3>
+<h3>{{"We will go on "+(datevar | date:"dd/MMMM/yy")}}</h3>
+<h3>{{"We will go on "+(datevar | date:"dd/M/yyyy")}}</h3>
+
+<h3>{{"You have offer by "+ (0.5 | percent)}}</h3>
+<h3>{{"You have offer by "+ (1000 | currency)}}</h3>
 
 <router-outlet></router-outlet>

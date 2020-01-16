@@ -1,19 +1,21 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit{
+export class AppComponent{
   title = 'Shopee';
-  ngOnInit(){
-
-  }
-
   imgname = "logo"   //image name without extension use the vraiable in image tag to use it
 
-  date = new Date()
+  datevar = new Date();
+  
+  vari :HTMLElement=document.getElementById("IDname");
+
+  ngOnInit(){
+   this.vari.style.color = red;
+  }
 
 
   changeImage(){
@@ -24,4 +26,8 @@ export class AppComponent implements OnInit{
       this.imgname="logo"
     }
   }
+
+  
+
+  
 }
