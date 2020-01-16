@@ -1,6 +1,11 @@
 
-<img [src]="'assets/image/'+imgname+'.png'">
-
+<img [src]="'assets/image/'+imgname+'.png'"><br>
 <button (click)=changeImage()>Click me</button>
+
+<h3>{{"Hello world" | uppercase}}</h3>
+<h3>{{"Hello world" | lowercase}}</h3>
+<h3>{{"Hello world" | slice:0:3}}</h3>
+
+<h3>{{"We will go on "+date | slice:}}</h3>
 
 <router-outlet></router-outlet>

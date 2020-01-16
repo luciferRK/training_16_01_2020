@@ -13,6 +13,8 @@ export class AppComponent implements OnInit{
 
   imgname = "logo"   //image name without extension use the vraiable in image tag to use it
 
+  date = new Date()
+
 
   changeImage(){
     if(this.imgname=="logo"){
